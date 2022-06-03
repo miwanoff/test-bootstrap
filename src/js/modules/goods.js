@@ -1,7 +1,7 @@
 export default function goods() {
   function loadBooks() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "../books.json", true);
+    xhttp.open("GET", "../../books.json", true);
     xhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
     xhttp.send();
     xhttp.onreadystatechange = function () {

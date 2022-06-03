@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/modules/basket.js":
-/*!******************************!*\
-  !*** ./js/modules/basket.js ***!
-  \******************************/
+/***/ "./src/js/modules/basket.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/basket.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -189,10 +189,10 @@ function basket() {
 
 /***/ }),
 
-/***/ "./js/modules/goods.js":
-/*!*****************************!*\
-  !*** ./js/modules/goods.js ***!
-  \*****************************/
+/***/ "./src/js/modules/goods.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/goods.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -202,7 +202,7 @@ __webpack_require__.r(__webpack_exports__);
 function goods() {
   function loadBooks() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "../books.json", true);
+    xhttp.open("GET", "../../books.json", true);
     xhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
     xhttp.send();
     xhttp.onreadystatechange = function () {
@@ -298,12 +298,12 @@ function goods() {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**********************!*\
-  !*** ./js/script.js ***!
-  \**********************/
+/*!**************************!*\
+  !*** ./src/js/script.js ***!
+  \**************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_basket__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/basket */ "./js/modules/basket.js");
-/* harmony import */ var _modules_goods__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/goods */ "./js/modules/goods.js");
+/* harmony import */ var _modules_basket__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/basket */ "./src/js/modules/basket.js");
+/* harmony import */ var _modules_goods__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/goods */ "./src/js/modules/goods.js");
 
 
 window.addEventListener("DOMContentLoaded", function () {
